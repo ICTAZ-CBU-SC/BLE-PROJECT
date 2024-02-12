@@ -1,0 +1,6 @@
+@eRegister.API_HostAddress = http://localhost:5189
+
+GET {{eRegister.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
