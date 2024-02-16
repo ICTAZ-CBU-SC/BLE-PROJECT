@@ -10,3 +10,6 @@
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/refint/eRegister.DAL.dll
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.pdb
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/ref/eRegister.DAL.dll
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/bin/Debug/net8.0/eRegister.DAL.runtimeconfig.json
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.csproj.AssemblyReference.cache
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.genruntimeconfig.cache
