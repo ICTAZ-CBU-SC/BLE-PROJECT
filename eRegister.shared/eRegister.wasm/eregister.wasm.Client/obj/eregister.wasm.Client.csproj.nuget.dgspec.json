@@ -1,28 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ZimbaDev\\Desktop\\ble\\eRegister\\eRegister.shared\\eregister.wasm\\eregister.wasm.Client\\eregister.wasm.Client.csproj": {}
+    "/Users/mathews/Projects/BLE-PROJECT/eRegister.shared/eRegister.wasm/eregister.wasm.Client/eregister.wasm.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ZimbaDev\\Desktop\\ble\\eRegister\\eRegister.shared\\eregister.wasm\\eregister.wasm.Client\\eregister.wasm.Client.csproj": {
+    "/Users/mathews/Projects/BLE-PROJECT/eRegister.shared/eRegister.wasm/eregister.wasm.Client/eregister.wasm.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ZimbaDev\\Desktop\\ble\\eRegister\\eRegister.shared\\eregister.wasm\\eregister.wasm.Client\\eregister.wasm.Client.csproj",
+        "projectUniqueName": "/Users/mathews/Projects/BLE-PROJECT/eRegister.shared/eRegister.wasm/eregister.wasm.Client/eregister.wasm.Client.csproj",
         "projectName": "eregister.wasm.Client",
-        "projectPath": "C:\\Users\\ZimbaDev\\Desktop\\ble\\eRegister\\eRegister.shared\\eregister.wasm\\eregister.wasm.Client\\eregister.wasm.Client.csproj",
-        "packagesPath": "C:\\Users\\ZimbaDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ZimbaDev\\Desktop\\ble\\eRegister\\eRegister.shared\\eregister.wasm\\eregister.wasm.Client\\obj\\",
+        "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.shared/eRegister.wasm/eregister.wasm.Client/eregister.wasm.Client.csproj",
+        "packagesPath": "/Users/mathews/.nuget/packages/",
+        "outputPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.shared/eRegister.wasm/eregister.wasm.Client/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ZimbaDev\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/mathews/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,13 +46,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.0, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.1, )",
+              "version": "[8.0.0, )",
               "autoReferenced": true
             }
           },
@@ -69,12 +67,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[8.0.0, 8.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
