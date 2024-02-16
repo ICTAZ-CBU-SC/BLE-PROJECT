@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eRegister.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0954ac6d83af75e26316d151d640db4aa6686014")]
 [assembly: System.Reflection.AssemblyProductAttribute("eRegister.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eRegister.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
