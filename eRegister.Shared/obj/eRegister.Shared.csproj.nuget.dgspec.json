@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj": {}
+    "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj": {}
   },
   "projects": {
-    "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj": {
+    "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj",
-        "projectName": "eRegister.DAL",
-        "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj",
+        "projectUniqueName": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj",
+        "projectName": "eRegister.Shared",
+        "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj",
         "packagesPath": "/Users/mathews/.nuget/packages/",
-        "outputPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/",
+        "outputPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/mathews/.nuget/NuGet/NuGet.Config"
