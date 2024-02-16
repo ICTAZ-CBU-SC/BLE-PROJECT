@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eRegister.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a6dbd932b47de98bb5d9153260d7c42c99541ba")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f280d6696c579addd9857d2a1d562fc2092d4542")]
 [assembly: System.Reflection.AssemblyProductAttribute("eRegister.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eRegister.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
