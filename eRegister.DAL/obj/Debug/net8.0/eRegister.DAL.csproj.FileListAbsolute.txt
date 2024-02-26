@@ -13,3 +13,6 @@
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/bin/Debug/net8.0/eRegister.DAL.runtimeconfig.json
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.csproj.AssemblyReference.cache
 /Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.genruntimeconfig.cache
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/bin/Debug/net8.0/eRegister.Shared.dll
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/bin/Debug/net8.0/eRegister.Shared.pdb
+/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/obj/Debug/net8.0/eRegister.DAL.csproj.CopyComplete
