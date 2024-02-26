@@ -59,6 +59,14 @@
               "target": "Package",
               "version": "[8.0.0, )",
               "autoReferenced": true
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[6.16.0, )"
+            },
+            "Shiny.Core": {
+              "target": "Package",
+              "version": "[3.2.4, )"
             }
           },
           "imports": [
