@@ -15,7 +15,6 @@ public class AttendanceController : ControllerBase {
     public async Task<ActionResult> MarkAttendance([FromBody] Attendance attendance){
 
         if (attendance == null){
-            Console.WriteLine("You are reaching here but it looks like the object null");
             return NotFound("You are reaching here but it looks like the object null"); // to be revised later
         }
 
