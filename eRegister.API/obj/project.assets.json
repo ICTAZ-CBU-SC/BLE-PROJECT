@@ -594,13 +594,24 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
-          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.2"
+          "Microsoft.EntityFrameworkCore.Sqlite": "8.0.2",
+          "eRegister.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/eRegister.DAL.dll": {}
         },
         "runtime": {
           "bin/placeholder/eRegister.DAL.dll": {}
+        }
+      },
+      "eRegister.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/eRegister.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/eRegister.Shared.dll": {}
         }
       }
     }
@@ -1637,13 +1648,19 @@
       "type": "project",
       "path": "../eRegister.DAL/eRegister.DAL.csproj",
       "msbuildProject": "../eRegister.DAL/eRegister.DAL.csproj"
+    },
+    "eRegister.Shared/1.0.0": {
+      "type": "project",
+      "path": "../eRegister.Shared/eRegister.Shared.csproj",
+      "msbuildProject": "../eRegister.Shared/eRegister.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.1",
       "Swashbuckle.AspNetCore >= 6.4.0",
-      "eRegister.DAL >= 1.0.0"
+      "eRegister.DAL >= 1.0.0",
+      "eRegister.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1674,6 +1691,9 @@
           "projectReferences": {
             "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj": {
               "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.DAL/eRegister.DAL.csproj"
+            },
+            "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj": {
+              "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj"
             }
           }
         }
