@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0tLu8y5yZOFoCOWCr5tr/3fWETcRvPjBwTbAJkr6yg8lnHY/ZsB9yiioMlgBl3cRaEwBqzfkHTCc27tVnpRGkQ==",
+  "dgSpecHash": "we71lkDis9GUR9PQH4itvIpyhKG4F3ee6fz49eWXVXZ9pz4YRxMy1e6SuewQX8hBSlVBGe/TKMqhQ2KuOUT75Q==",
   "success": true,
   "projectFilePath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.UI/Web/Web.csproj",
   "expectedPackageFiles": [
@@ -33,7 +33,9 @@
     "/Users/mathews/.nuget/packages/microsoft.net.illink.tasks/8.0.0/microsoft.net.illink.tasks.8.0.0.nupkg.sha512",
     "/Users/mathews/.nuget/packages/microsoft.net.sdk.webassembly.pack/8.0.0/microsoft.net.sdk.webassembly.pack.8.0.0.nupkg.sha512",
     "/Users/mathews/.nuget/packages/mudblazor/6.16.0/mudblazor.6.16.0.nupkg.sha512",
+    "/Users/mathews/.nuget/packages/shiny.core/3.2.4/shiny.core.3.2.4.nupkg.sha512",
     "/Users/mathews/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
+    "/Users/mathews/.nuget/packages/system.reactive/6.0.0/system.reactive.6.0.0.nupkg.sha512",
     "/Users/mathews/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/mathews/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512",
     "/Users/mathews/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.0/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.0.nupkg.sha512"

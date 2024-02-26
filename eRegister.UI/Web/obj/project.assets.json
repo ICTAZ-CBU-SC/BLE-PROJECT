@@ -491,6 +491,27 @@
           "buildMultiTargeting/MudBlazor.props": {}
         }
       },
+      "Shiny.Core/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Shiny.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Shiny.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Shiny.Core.targets": {}
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
@@ -500,6 +521,22 @@
         },
         "runtime": {
           "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
             "related": ".xml"
           }
         },
@@ -1039,6 +1076,27 @@
           "buildMultiTargeting/MudBlazor.props": {}
         }
       },
+      "Shiny.Core/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging": "8.0.0",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Shiny.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Shiny.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Shiny.Core.targets": {}
+        }
+      },
       "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
@@ -1048,6 +1106,22 @@
         },
         "runtime": {
           "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
             "related": ".xml"
           }
         },
@@ -2085,6 +2159,37 @@
         "staticwebassets/MudBlazor.min.js"
       ]
     },
+    "Shiny.Core/3.2.4": {
+      "sha512": "1Il95hFGFgBS9GPwsbbWh1k8Y3mtiL8kHo0S/V5nCUL8CQc84AcHw8LdaqjiHqwFJFaHuBnrZfS+ny8YQJfhRw==",
+      "type": "package",
+      "path": "shiny.core/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Shiny.Core.targets",
+        "icon.png",
+        "lib/monoandroid13.0/Shiny.Core.dll",
+        "lib/monoandroid13.0/Shiny.Core.xml",
+        "lib/net8.0-android34.0/Shiny.Core.dll",
+        "lib/net8.0-android34.0/Shiny.Core.xml",
+        "lib/net8.0-ios17.2/Shiny.Core.dll",
+        "lib/net8.0-ios17.2/Shiny.Core.xml",
+        "lib/net8.0-maccatalyst17.2/Shiny.Core.dll",
+        "lib/net8.0-maccatalyst17.2/Shiny.Core.xml",
+        "lib/net8.0-windows10.0.19041/Shiny.Core.dll",
+        "lib/net8.0-windows10.0.19041/Shiny.Core.xml",
+        "lib/net8.0/Shiny.Core.dll",
+        "lib/net8.0/Shiny.Core.xml",
+        "lib/netstandard2.1/Shiny.Core.dll",
+        "lib/netstandard2.1/Shiny.Core.xml",
+        "lib/xamarinios10/Shiny.Core.dll",
+        "lib/xamarinios10/Shiny.Core.xml",
+        "readme.md",
+        "readme.txt",
+        "shiny.core.3.2.4.nupkg.sha512",
+        "shiny.core.nuspec"
+      ]
+    },
     "System.IO.Pipelines/8.0.0": {
       "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
@@ -2112,6 +2217,34 @@
         "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "type": "package",
+      "path": "system.reactive/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
       ]
     },
     "System.Text.Encodings.Web/8.0.0": {
@@ -2229,7 +2362,8 @@
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 8.0.0",
       "Microsoft.NET.ILLink.Tasks >= 8.0.0",
       "Microsoft.NET.Sdk.WebAssembly.Pack >= 8.0.0",
-      "MudBlazor >= 6.16.0"
+      "MudBlazor >= 6.16.0",
+      "Shiny.Core >= 3.2.4"
     ]
   },
   "packageFolders": {
@@ -2294,6 +2428,10 @@
           "MudBlazor": {
             "target": "Package",
             "version": "[6.16.0, )"
+          },
+          "Shiny.Core": {
+            "target": "Package",
+            "version": "[3.2.4, )"
           }
         },
         "imports": [
