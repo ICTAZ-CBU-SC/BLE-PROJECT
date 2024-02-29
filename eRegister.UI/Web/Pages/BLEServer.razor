@@ -1,12 +1,156 @@
 @page "/ble-server"
 
-<MudGrid>
-    <MudItem xs="12">
-        <MudPaper>
-            <MudText Type="Typo.H4">BLE server</MudText>
-        </MudPaper>
-    </MudItem>
-    <MudItem xs="12">
+@using System.ComponentModel.DataAnnotations
+@inject ISnackbar Snackbar
 
+
+
+<h1 class="mb-5">BLE Server</h1>
+
+<EditForm Model="@model" OnValidSubmit="OnValidSubmit" >
+    <DataAnnotationsValidator />
+    <MudGrid>
+        
+        <MudItem xs="12" sm="7">
+            <MudCard class="pt-3 pb-5 ps-2 pe-2">
+                <MudText Typo="Typo.subtitle2" Align="Align.Center" class="pt-4">
+                    Fill out the form correctly to start marking attendance.
+                </MudText>
+                <MudForm Disabled="IsServerStarted">
+                <MudCardContent class="mt-5">
+                     <MudItem xs="12">
+                        <MudAutocomplete T="Course" Label="Select Course" @bind-value="model.SelectedCourse" SearchFunc="@CourseSearch"
+                                        ResetValueOnEmptyText="@resetValueOnEmptyText"
+                                        CoerceText="@coerceText" CoerceValue="@coerceValue"
+                                        ToStringFunc="@(course => course.ToString())"
+                                        Required="true"
+                                        For="@(() => model.SelectedCourse)"
+                                         />
+                    </MudItem>
+                    @* Add picking attendance duration *@
+                    <MudGrid>
+                  
+                    <MudItem xs="6">
+                    @* Start Time *@
+                    <MudTimePicker class="mt-4" PickerVariant="PickerVariant.Dialog" Label="Start Time" AmPm="true" @bind-Time="model.StartTime" Required="true" For="@(() => model.StartTime)" />
+                    </MudItem>
+                    <MudItem xs="6">
+                         @* End time *@
+                    <MudTimePicker Label="End Time" PickerVariant="PickerVariant.Dialog" class="mt-4 mb-5" AmPm="true" @bind-Time="model.EndTime" Required="true" For="@(() => model.EndTime)" />
+                    </MudItem>
+                   
+                    </MudGrid>
+                    
+                </MudCardContent>
+                </MudForm>
+            </MudCard>
+        </MudItem>
+        
+         <MudItem xs="12" sm="5">
+        <MudContainer Class="pa-4 mud-height-full d-flex justify-center align-items-center">
+            <MudCardActions >
+                    <MudButton  Circle="true" ButtonType="ButtonType.Submit" Style="width: 200px; height: 200px; border-radius: 50%;" Variant="Variant.Filled" Color="@(IsServerStarted? Color.Error : Color.Success)"
+                        Class="m-3" @onclick="ToggleSession">@(IsServerStarted? "Stop Attendance Server":"Start Attendance Server")</MudButton>   
+            </MudCardActions>
+        </MudContainer>
     </MudItem>
-</MudGrid>
+    </MudGrid>
+</EditForm>
+
+
+
+@code {
+
+    StartServerForm model;
+    
+    bool isFormValid;
+
+    private List<Course> courses = new ();
+
+    private bool resetValueOnEmptyText;
+    private bool coerceText;
+    private bool coerceValue;
+
+    private bool IsServerStarted {get;set;}
+
+    public class Course {
+
+        public string CourseCode {get; set;}
+        
+        public string CourseDescription {get; set;}
+
+        public override string ToString(){
+        return $"{CourseCode} - {CourseDescription}";
+        }
+    }
+
+    
+    public class StartServerForm
+    {
+        [Required(ErrorMessage = "Please select a course.")]
+        public Course SelectedCourse { get; set; }
+        [Required(ErrorMessage = "Please Set start time")]
+        public TimeSpan? StartTime {get; set;}
+        [Required(ErrorMessage = "Please Set end time")]
+        public TimeSpan? EndTime {get; set;} // Idea: set a timer for the end time and must be updated when server is stopped
+
+        public override string ToString(){
+            return $"Course: {SelectedCourse} Start Time: {StartTime} End Time: {EndTime}";
+        }
+
+    }
+
+    protected override void OnInitialized(){
+        // to be replaced by call to an API
+        courses.Add(new Course(){CourseCode = "CS350", CourseDescription ="Objected Oriented Programming with Java"});
+        courses.Add(new Course(){CourseCode = "CSE351", CourseDescription ="Computer Algorithms"});
+        courses.Add(new Course(){CourseCode = "CS351", CourseDescription ="Web programming"});
+
+        model = new StartServerForm();
+
+        
+    }
+
+    private void OnValidSubmit(EditContext context)
+    {
+        isFormValid = true;
+        StateHasChanged();
+    }
+    
+    private async Task<IEnumerable<Course>> CourseSearch(string value)
+    {
+        // In real life use an asynchronous function for fetching data from an api.
+        await Task.Delay(5);
+
+        // if text is null or empty,  show complete list
+        if (string.IsNullOrEmpty(value))
+            return courses;
+
+        return courses.Where(x => x.CourseCode.Contains(value, StringComparison.InvariantCultureIgnoreCase));
+    }
+
+    // start and stop server toggle
+    public void StartServer(){
+        // simulating the start and end of the server
+        if(isFormValid){
+            this.IsServerStarted = true;
+            Snackbar.Add($"Session started successfully! Taking attendance now. {model.ToString()}", Severity.Success);
+        }  
+    }
+
+    // stop server
+    private void StopServer(){
+         this.IsServerStarted = false;
+         Snackbar.Add("Session stopped! Stopped taking attendance.", Severity.Error);
+    }
+
+    // toggle Session
+    private void ToggleSession(){
+        if(this.IsServerStarted){
+            StopServer();
+        }else if(!this.IsServerStarted){
+            StartServer();
+        }
+    }
+
+}
