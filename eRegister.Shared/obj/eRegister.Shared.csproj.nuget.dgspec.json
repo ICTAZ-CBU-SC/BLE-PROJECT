@@ -1,26 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj": {}
+    "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\eRegister.Shared.csproj": {}
   },
   "projects": {
-    "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj": {
+    "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\eRegister.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj",
+        "projectUniqueName": "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\eRegister.Shared.csproj",
         "projectName": "eRegister.Shared",
-        "projectPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj",
-        "packagesPath": "/Users/mathews/.nuget/packages/",
-        "outputPath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/obj/",
+        "projectPath": "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\eRegister.Shared.csproj",
+        "packagesPath": "C:\\Users\\Gilbert\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mathews/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Gilbert\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +33,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -54,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wmotevOTEPe5f/51xPZwqmyNgjXE+uS3jXSZzqOOmAwaZH+tJZk5TbQMp13eseYstZrTwFO8BB2UqXAz7mCDHw==",
+  "dgSpecHash": "t+iOVbFlkeGdO0HY5EOzGIvyBTNggHFaO/zKyAh0SybElqHi65BLlCK/iQs4hhyCM55JcUeqA/orMCzj9za1dA==",
   "success": true,
-  "projectFilePath": "/Users/mathews/Projects/BLE-PROJECT/eRegister.Shared/eRegister.Shared.csproj",
+  "projectFilePath": "D:\\Projects\\BLE-PROJECT\\eRegister.Shared\\eRegister.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
