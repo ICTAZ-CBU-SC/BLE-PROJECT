@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using eRegister.Shared;
 using Microsoft.EntityFrameworkCore;
 
 namespace eRegister.DAL.Models;
@@ -16,6 +17,7 @@ public partial class ERegisterDbContext : DbContext
     }
 
     public virtual DbSet<Attendance> Attendances { get; set; }
+    public virtual DbSet<Student> Students { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlite("Data Source=../eRegister_DB.db");
